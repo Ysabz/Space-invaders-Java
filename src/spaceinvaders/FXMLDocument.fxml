@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" onMouseClicked="#onMouseClick" onMouseMoved="#onMouseMove" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spaceinvaders.FXMLDocumentController">
+   <children>
+      <Label fx:id="message" alignment="CENTER" layoutX="83.0" layoutY="212.0" prefHeight="123.0" prefWidth="562.0" text="Game over">
+         <font>
+            <Font name="Algerian" size="96.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#f5d712" />
+                  <Stop color="#ff0d0d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="button" layoutX="185.0" layoutY="392.0" mnemonicParsing="false" onAction="#buttonHandle" prefHeight="78.0" prefWidth="331.0" text="New Game ">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="live1" fitHeight="50.0" fitWidth="61.0" layoutX="614.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="live2" fitHeight="50.0" fitWidth="61.0" layoutX="553.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="live3" fitHeight="50.0" fitWidth="61.0" layoutX="486.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="scoreLabel" alignment="CENTER" layoutX="160.0" layoutY="21.0" prefHeight="50.0" prefWidth="127.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="350.0" layoutY="21.0" prefHeight="50.0" prefWidth="127.0" text="LIVES:" textFill="WHITE">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="21.0" prefHeight="50.0" prefWidth="127.0" text="SCORE:" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
